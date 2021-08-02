@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(26, 34, 34) ;
+    font-family:"Calibri";
+
+}
+
+.barra{
+width: 900px;
+margin: 0 auto;
+
+}
+header{
+    background: dimgray;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+    
+
+
+
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:dimgray;
+    height: auto;
+    width: 100vw;
+    font-family: "Calibri";
+    padding-top: 40px;
+    color: #fff;
+    
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 30px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+#logo_cuevana{
+    width: 100px; 
+    height: 100px;
+    float: left;
+    padding: 8px;
+
+}
+#logo_cuevana_footer{
+    width: 100px; 
+    height: 100px;
+
+}
+nav{
+    float: right;
+
+}
+nav ul li{
+
+    list-style: none;
+    margin-left: 75px;
+    padding: 15px 0;
+    float: left;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color:floralwhite;
+    font-weight: bold;
+    font-size:x-large;
+
+
+
+
+}
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: floralwhite;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.5s;
+}
+nav ul li a:hover::before{
+    width: 100%;
+
+
+
+}
+
