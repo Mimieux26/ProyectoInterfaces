@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,600;1,600&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    background: rgb(26, 34, 34) ;
-    font-family:"Calibri";
+    background:black;
+    font-family:'Andada Pro', serif;
+    margin: 0;
+
 
 }
 
 .barra{
-width: 900px;
+width: 1000px;
 margin: 0 auto;
 
 }
@@ -19,13 +25,80 @@ header{
     width: 100%;
     clear: both;
     content: '';
-    display: table;
+    display: flex;
+    justify-content: flex-end;
     
+}
+
+main{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.pelicula{
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px black;
+    background-color: darkgrey;
+    position: relative;
+    overflow: hidden;
 
 
 
 }
-footer{
+.pelicula img{
+    width: 100%;
+
+
+}
+
+.peli-info{
+    color:floralwhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;
+    letter-spacing: 0.5px;
+}
+.peli-info h3{
+    margin-top: 0;
+}
+.peli-info span{
+    background-color:olivedrab ;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.peli-info span.valor{
+    color: black;
+
+
+
+}
+.descripcion{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: floralwhite;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+
+
+}
+.pelicula:hover .descripcion{
+    transform: translateY(0);
+}
+
+
+/*footer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -95,7 +168,7 @@ footer{
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
-}
+}*/
 #logo_cuevana{
     width: 100px; 
     height: 100px;
