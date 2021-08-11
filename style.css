@@ -1,70 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,600;1,600&display=swap');
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background:black;
-    font-family:'Andada Pro', serif;
+body {
+    background: black;
+    font-family: 'Andada Pro', serif;
     margin: 0;
-
-
 }
 
-.barra{
-width: 1000px;
-margin: 0 auto;
-
+.barra {
+    width: 1000px;
+    margin: 0 auto;
 }
-header{
+
+header {
     background: dimgray;
     width: 100%;
     clear: both;
     content: '';
     display: flex;
     justify-content: flex-end;
-    
 }
 
-main{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-#section1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-#section2{
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-h1{
+#section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
     width: 100%;
     text-align: center;
     color: floralwhite;
     margin: 50px;
 }
-h3{
-    text-align:left;
-    color:floralwhite;
+
+h3 {
+    text-align: left;
+    color: floralwhite;
     margin: 10px;
 }
 
-
-.pelicula{
+.pelicula {
     width: 300px;
     margin: 1rem;
     border-radius: 3px;
@@ -72,42 +64,38 @@ h3{
     background-color: darkgrey;
     position: relative;
     overflow: hidden;
-
-
-
 }
-.pelicula img{
+
+.pelicula img {
     width: 100%;
-
-
 }
 
-.peli-info{
-    color:floralwhite;
+.peli-info {
+    color: floralwhite;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: auto;
     letter-spacing: 0.5px;
 }
-.peli-info h3{
+
+.peli-info h3 {
     margin-top: 0;
 }
-.peli-info span{
-    background-color:yellow;
+
+.peli-info span {
+    background-color: yellow;
     padding: 5px;
     border-radius: 3px;
     font-weight: bold;
     margin: 5px;
 }
 
-.peli-info span.valor{
+.peli-info span.valor {
     color: black;
-
-
-
 }
-.descripcion{
+
+.descripcion {
     position: absolute;
     left: 0;
     right: 0;
@@ -117,120 +105,187 @@ h3{
     max-height: 100%;
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
-
-
 }
-.pelicula:hover .descripcion{
+
+.pelicula:hover .descripcion {
     transform: translateY(0);
 }
 
-
-/*footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background:dimgray;
-    height: auto;
-    width: 100vw;
-    font-family: "Calibri";
-    padding-top: 40px;
-    color: #fff;
-    
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-.footer-content{
+
+footer {
+    width: 100%;
+    background: #202020;
+    color: white;
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 30px;
-}
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-.socials li{
-    margin: 0 10px;
-}
-.socials a{
-    text-decoration: none;
-    color: #fff;
-}
-.socials a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-
-}
-.socials a:hover i{
-    color: aqua;
+    justify-content: space-between;
 }
 
-.footer-bottom{
-    background: #000;
-    width: 100vw;
-    padding: 20px 0;
-    text-align: center;
+.colum1 {
+    max-width: 400px;
 }
-.footer-bottom p{
+
+.colum1 h1 {
+    font-size: 22px;
+}
+
+.Facebook img {
+    width: 36px;
+    height: 36px;
+}
+
+.twitter img {
+    width: 36px;
+    height: 36px;
+}
+
+.insta img {
+    width: 36px;
+    height: 36px;
+}
+
+.row label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum2 {
+    max-width: 400px;
+}
+
+.colum2 h1 {
+    font-size: 22px;
+}
+
+.colum2 p {
     font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
+    color: #C7C7C7;
+    margin-top: 20px;
 }
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}*/
-#logo_cuevana{
-    width: 100px; 
+
+.colum3 {
+    max-width: 400px;
+}
+
+.colum3 h1 {
+    font-size: 22px;
+}
+
+.row2 {
+    margin-top: 20px;
+    display: flex;
+}
+
+.Casa img {
+    width: 30px;
+    height: 30px;
+}
+
+.Cel img {
+    width: 30px;
+    height: 30px;
+}
+
+.Correo img {
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer {
+    width: 100%;
+    background: #101010;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright {
+    color: #C7C7C7;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a {
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+@media screen and (max-width: 1100px) {
+    .container-body {
+        flex-wrap: wrap;
+    }
+    .colum1 {
+        max-width: 100%;
+    }
+    .colum2,
+    .colum3 {
+        margin-top: 40px;
+    }
+}
+
+#logo_cuevana {
+    width: 100px;
     height: 100px;
     float: left;
     padding: 8px;
-
 }
-#logo_cuevana_footer{
-    width: 100px; 
+
+#logo_cuevana_footer {
+    width: 100px;
     height: 100px;
-
 }
-nav{
+
+nav {
     float: right;
-
 }
-nav ul li{
 
+nav ul li {
     list-style: none;
     margin-left: 75px;
     padding: 15px 0;
     float: left;
     position: relative;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
-    color:floralwhite;
+    color: floralwhite;
     font-weight: bold;
-    font-size:x-large;
-
-
-
-
+    font-size: x-large;
 }
-nav ul li a::before{
+
+nav ul li a::before {
     display: block;
     content: '';
     width: 0%;
@@ -240,10 +295,7 @@ nav ul li a::before{
     position: absolute;
     transition: width 0.5s;
 }
-nav ul li a:hover::before{
+
+nav ul li a:hover::before {
     width: 100%;
-
-
-
 }
-
