@@ -64,7 +64,7 @@ h3 {
 }
 
 .pelicula {
-    width: 300px;
+    width: 350px;
     margin: 1rem;
     border-radius: 3px;
     box-shadow: 0.2px 4px 5px black;
@@ -84,6 +84,7 @@ h3 {
     justify-content: space-between;
     padding: auto;
     letter-spacing: 0.5px;
+    margin: 10px;
 }
 
 .peli-info h3 {
@@ -113,24 +114,15 @@ h3 {
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
 }
+/*ESTES DESPLEGA LA DESCRIPCION*/
 
-.pelicula:hover .descripcion {
+
+/*.pelicula:hover .descripcion {
     background: #b85555;
     transform: translateY(0);
-}
+    overflow:scroll;
+}*/
 
-<<<<<<< HEAD
-=======
-
-/*inicio footer*/
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
->>>>>>> 02f2428d621dafc038115ddc8b8367af75ffa331
 
 /*comienza el footer*/
 footer {
@@ -314,3 +306,18 @@ nav ul li a::before {
 nav ul li a:hover::before {
     width: 100%;
 }
+
+#fav{
+    display:inline-block;
+    position:relative;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
+#fav:active {
+    padding: 5px;
+    
+  }

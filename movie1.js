@@ -23,14 +23,18 @@ function showPeli(data) {
         <img src="${url_images+poster_path}" alt="${title}" id="imagen">
         
             <div class="peli-info">
-                <h3>${title}</h3>
-                <span class="valor">${vote_average}</span>
+                    <h3>${title}</h3>
+
+                    <button id="fav"><img src="images/corazon1.png"></button>
+                    <button id="fav">Ver mas</button>
+                
             </div>
             <div class="descripcion">
                 <h3>Descripcion</h3>
                 ${overview}
+
             
-        </div>
+            </div>
         `
 
         main.appendChild(peliElement);
