@@ -111,13 +111,8 @@ h3 {
     transform: translateY(0);
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
 
+/*comienza el footer*/
 footer {
     width: 100%;
     background: #202020;
