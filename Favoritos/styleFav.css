@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,600;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: 'Andada Pro', serif;
+    margin: 0;
+}
+
+.Barra {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background: dimgray;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: flex;
+    justify-content: flex-end;
+}
