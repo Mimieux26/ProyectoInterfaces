@@ -11,6 +11,9 @@ body {
     margin: 0;
 }
 
+
+/*header inicio*/
+
 .barra {
     width: 1000px;
     margin: 0 auto;
@@ -25,10 +28,14 @@ header {
     justify-content: flex-end;
 }
 
+
+/*fin header inicio*/
+
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* padding-top: 10rem; */
 }
 
 #section1 {
@@ -62,8 +69,8 @@ h3 {
     border-radius: 3px;
     box-shadow: 0.2px 4px 5px black;
     background-color: darkgrey;
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .pelicula img {
@@ -108,8 +115,12 @@ h3 {
 }
 
 .pelicula:hover .descripcion {
+    background: #b85555;
     transform: translateY(0);
 }
+
+
+/*inicio footer*/
 
 * {
     margin: 0px;
