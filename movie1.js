@@ -45,13 +45,18 @@ function showPeli(data) {
 }
 
 function vermasdesc(){
-    let sec=document.getElementById('desct');
-    sec.classList.value='descripcion active'
+    let sec=document.getElementsByClassName('descripcion');
+    console.log(sec);
+    sec[0].classList.value='descripcion active';
+
+    
+   /*sec.classList.value='descripcion active'*/
 
 }
 function toggle(){
     let desco=document.getElementById('desct');
     desco.classList.value='descripcion deactive'
+    
 
 
 
