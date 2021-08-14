@@ -16,7 +16,7 @@ function getPelicula(link) {
 function showPeli(data) {
     main.innerHTML = '<h1>Pel&iacute;culas Populares</h1>';
     data.forEach(peli => {
-        const { title, poster_path,vote_average,overview } = peli;
+        const { title, poster_path, vote_average, overview } = peli;
         const peliElement = document.createElement('div');
         peliElement.classList.add('pelicula');
         peliElement.innerHTML += `
@@ -26,7 +26,7 @@ function showPeli(data) {
                     <h3>${title}</h3>
 
                     <button id="fav"><img src="images/corazon1.png"></button>
-                    <button id="fav">Ver mas</button>
+                    <button id="Ver+">Ver mas</button>
                 
             </div>
             <div class="descripcion">

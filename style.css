@@ -114,6 +114,8 @@ h3 {
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
 }
+
+
 /*ESTES DESPLEGA LA DESCRIPCION*/
 
 
@@ -125,6 +127,7 @@ h3 {
 
 
 /*comienza el footer*/
+
 footer {
     width: 100%;
     background: #202020;
@@ -261,6 +264,9 @@ footer {
     }
 }
 
+
+/*fin footer*/
+
 #logo_cuevana {
     width: 100px;
     height: 100px;
@@ -307,9 +313,9 @@ nav ul li a:hover::before {
     width: 100%;
 }
 
-#fav{
-    display:inline-block;
-    position:relative;
+#fav {
+    display: inline-block;
+    position: relative;
     height: 50px;
     padding: 0;
     margin: 0;
@@ -317,7 +323,7 @@ nav ul li a:hover::before {
     background-color: transparent;
     border: none;
 }
+
 #fav:active {
     padding: 5px;
-    
-  }
+}
