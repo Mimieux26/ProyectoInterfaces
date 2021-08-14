@@ -26,7 +26,7 @@ function showPeli(data) {
                     <h3>${title}</h3>
 
                     <button id="fav"><img src="images/corazon1.png"></button>
-                    <button id="fav">Ver mas</button>
+                    <button id="vermas">Ver mas</button>
                 
             </div>
             <div class="descripcion">
@@ -42,4 +42,9 @@ function showPeli(data) {
     });
 
 
+}
+
+function vermas(){
+    
+    
 }
