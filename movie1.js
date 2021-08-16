@@ -28,7 +28,20 @@ function showPeli(data) {
         
             <div class="peli-info">
                     <h3>${title}</h3>
-                    <button id="fav"><img src="images/corazon1.png"></button>
+                    <p>
+                    <input type="radio" name="valoracion" value= "1">
+                    <label for="radio1">❤</label>
+                    <input type="radio" name="valoracion" value= "2">
+                    <label for="radio2">❤</label>
+                    <input type="radio" name="valoracion" value= "3">
+                    <label for="radio3">❤</label>
+                    <input type="radio" name="valoracion" value= "4">
+                    <label for="radio4">❤</label>
+                    <input type="radio" name="valoracion" value= "5">
+                    <label for="radio5">❤</label>
+                    </p>
+
+                    
                     <button id="vermas" onclick="vermasdesc()">Ver mas</button>
                 
             </div>
@@ -95,16 +108,17 @@ function showPeli(data) {
 function vermasdesc(){
     let sec=document.getElementsByClassName('descripcion');
     console.log(sec);
-    sec[0].classList.value='descripcion active';
+    sec[0].classList.value = 'descripcion active';
 
-    
-   /*sec.classList.value='descripcion active'*/
+
+    /*sec.classList.value='descripcion active'*/
 
 }
-function toggle(){
-    let desco=document.getElementById('desct');
-    desco.classList.value='descripcion deactive'
-    
+
+function toggle() {
+    let desco = document.getElementById('desct');
+    desco.classList.value = 'descripcion deactive'
+
 
 
 
