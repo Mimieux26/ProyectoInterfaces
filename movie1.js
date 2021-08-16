@@ -1,6 +1,10 @@
 const link_api = 'https://api.themoviedb.org/3/movie/popular?api_key=c8f0e89c2a789ea8a93c6db654ac65d8&language=es&page=1';
 const url_images = 'https://image.tmdb.org/t/p/w300';
 
+
+
+
+
 const main = document.getElementById('section1');
 
 getPelicula(link_api);
@@ -20,7 +24,7 @@ function showPeli(data) {
         const peliElement = document.createElement('div');
         peliElement.classList.add('pelicula');
         peliElement.innerHTML += `
-        <img src="${url_images+poster_path}" alt="${title}" id="imagen">
+        <img src="images/placeholder.jpg" data-src="${url_images+poster_path}" alt="${title}" id="imagen">
         
             <div class="peli-info">
                     <h3>${title}</h3>
@@ -39,10 +43,54 @@ function showPeli(data) {
 
         main.appendChild(peliElement);
 
+
     });
+
+/***currying***/
+    const options={
+        root:null,
+        threshold:1,
+        rootMargin:'10px'
+       
+    };
+    const img= document.querySelectorAll('#imagen');
+    console.log(img);
+    function callback(entries, observer){
+        
+        entries.forEach(entry=>{
+            console.log('Intercepcion', entry.target);
+            if(entry.isIntersecting){
+                
+                    entry.target.src= entry.target.dataset.src;
+                    observer.unobserve(entry.target);
+            }
+    
+    
+    
+        });
+    
+    
+    }
+    const observer = new IntersectionObserver(callback,options)
+    observer.observe(imagen)
+    
+    img.forEach(i=>{
+        observer.observe(i);
+    })
+    
+
+    
+
+
+
+
 
 
 }
+
+
+
+
 
 function vermasdesc(){
     let sec=document.getElementsByClassName('descripcion');
@@ -62,3 +110,10 @@ function toggle(){
 
 
 }
+
+
+
+
+
+
+
