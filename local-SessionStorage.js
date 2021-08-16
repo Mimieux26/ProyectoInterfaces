@@ -3,7 +3,7 @@
 
 function mostrarDatosLocals() {
 
-    localStorage.setItem("fav", fav)
-    var resultado = localStorage.getItem("fav")
+    localStorage.setItem("valoracion", favoritos)
+    var resultado = localStorage.getItem("value")
     console.log(resultado)
 }

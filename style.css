@@ -114,22 +114,22 @@ h3 {
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
 }
-.descripcion.active{
+
+.descripcion.active {
     background: #b85555;
     top: 25%;
-    transform:translateY(0);
+    transform: translateY(0);
     overflow: scroll;
-    
 }
-.descripcion.deactive{
-    transform: translateY(101%);
 
+.descripcion.deactive {
+    transform: translateY(101%);
 }
 
 
 /*ESTES DESPLEGA LA DESCRIPCION*/
 
- 
+
 /*.pelicula:hover .descripcion {
     background: #b85555;
     transform: translateY(0);
@@ -339,14 +339,14 @@ nav ul li a:hover::before {
     padding: 5px;
 }
 
-#toggle{
+#toggle {
     position: relative;
     width: 30px;
     height: 30px;
     cursor: pointer;
+}
 
-}
-#toggle:before{
+#toggle:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -354,9 +354,10 @@ nav ul li a:hover::before {
     background-color: black;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
-#toggle:after{
+
+#toggle:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -364,5 +365,17 @@ nav ul li a:hover::before {
     background-color: black;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label:hover {
+    color: rgb(46, 92, 219);
+}
+
+input [type="radio"]:checked~label {
+    color: rgb(46, 92, 219);
 }
