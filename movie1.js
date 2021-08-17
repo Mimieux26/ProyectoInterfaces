@@ -72,7 +72,7 @@ function showPeli(data) {
     function callback(entries, observer){
         
         entries.forEach(entry=>{
-            console.log('Intercepcion', entry.target);
+            /*console.log('Intercepcion', entry.target);*/
             if(entry.isIntersecting){
                 
                     entry.target.src= entry.target.dataset.src;
