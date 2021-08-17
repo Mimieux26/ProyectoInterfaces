@@ -117,7 +117,7 @@ function vermasdesc(){
 }
 
 function toggle() {
-    let desco = document.getElementById('desct');
+    let desco = document.getElementsByClassName('descripcion');
     desco[1].classList.value = 'descripcion deactive'
 
 

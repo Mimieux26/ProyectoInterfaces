@@ -369,3 +369,18 @@ nav ul li a:hover::before {
     transform: translate(-50%,-50%) rotate(-45deg);
 }
 
+input[type="radio"] {
+
+    display: none;
+
+}
+label:hover {
+
+    color: rgb(46, 92, 219);
+
+}
+input [type="radio"]:checked~label {
+
+    color: rgb(46, 92, 219);
+
+}
