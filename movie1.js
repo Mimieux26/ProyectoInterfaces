@@ -14,13 +14,14 @@ function getPelicula(link) {
         showPeli(data.results);
 
     })
+    
 }
 
 
 function showPeli(data) {
     main.innerHTML = '<h1>Pel&iacute;culas Populares</h1>';
     data.forEach(peli => {
-        const { title, poster_path,overview } = peli;
+        const { title, poster_path,overview,id } = peli;
        
         const peliElement = document.createElement('div');
         peliElement.classList.add('pelicula');
@@ -43,11 +44,11 @@ function showPeli(data) {
                     </p>
 
                     
-                    <button id="vermas" onclick="vermasdesc()">Ver mas</button>
+                    <button id="vermas" onclick="toggle(${id})">Ver mas</button>
                 
             </div>
-            <div class="descripcion" id="desct">
-                <div id="toggle" onclick="toggle()"></div>
+            <div class="descripcion" id="${id}">
+                <div id="toggle" onclick="toggle(${id})"></div>
                 <h3>Descripcion</h3>
                 ${overview}
 
@@ -60,46 +61,6 @@ function showPeli(data) {
 
     });
 
-/***currying***/
-    const options={
-        root:null,
-        threshold:1,
-        rootMargin:'10px'
-       
-    };
-    const img= document.querySelectorAll('#imagen');
-    console.log(img);
-    function callback(entries, observer){
-        
-        entries.forEach(entry=>{
-            /*console.log('Intercepcion', entry.target);*/
-            if(entry.isIntersecting){
-                
-                    entry.target.src= entry.target.dataset.src;
-                    observer.unobserve(entry.target);
-            }
-    
-    
-    
-        });
-    
-    
-    }
-    const observer = new IntersectionObserver(callback,options)
-    observer.observe(imagen)
-    
-    img.forEach(i=>{
-        observer.observe(i);
-    })
-    
-
-    
-
-
-
-
-
-
 }
 
 
@@ -107,24 +68,26 @@ function showPeli(data) {
 
 
 function vermasdesc(){
-    let sec=document.getElementsByClassName('descripcion');
-    console.log(sec);
-    sec[1].classList.value = 'descripcion active';
+let sec=document.getElementsByClassName('descripcion');
+console.log(sec);
+sec[0].classList.value = 'descripcion active';
 
 
-    /*sec.classList.value='descripcion active'*/
+/*sec.classList.value='descripcion active'*/
+
+}
+
+function toggle(id) {
+    let desco = document.getElementById(id);
+    
+    desco.classList.toggle ('active')
+
+
+
+
 
 }
 
-function toggle() {
-    let desco = document.getElementsByClassName('descripcion');
-    desco[1].classList.value = 'descripcion deactive'
-
-
-
-
-
-}
 
 
 

@@ -8,8 +8,8 @@ getPelicula2(link_api2);
 function getPelicula2(link) {
     fetch(link).then(res => res.json()).then(data => {
         showPeli2(data.results);
-
     })
+    
 }
 
 
@@ -20,7 +20,7 @@ function showPeli2(data) {
         const peliElement2 = document.createElement('div');
         peliElement2.classList.add('pelicula');
         peliElement2.innerHTML += `
-        <img src="${url_images+poster_path}" alt="${title}" id="imagen">
+        <img src="images/placeholder.jpg" data-src="${url_images+poster_path}" alt="${title}" id="imagen">
         
             <div class="peli-info">
                 <h3>${title}</h3>
@@ -36,6 +36,6 @@ function showPeli2(data) {
         main2.appendChild(peliElement2);
 
     });
-
+    IntersectionObs();
 
 }
