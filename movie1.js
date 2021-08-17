@@ -4,7 +4,7 @@ const url_images = 'https://image.tmdb.org/t/p/w300';
 
 
 
-
+var arrayPeliPopular = []
 const main = document.getElementById('section1');
 
 getPelicula(link_api);
@@ -12,17 +12,17 @@ getPelicula(link_api);
 function getPelicula(link) {
     fetch(link).then(res => res.json()).then(data => {
         showPeli(data.results);
-
+        arrayPeliPopular = data.results;
     })
-    
+
 }
 
 
 function showPeli(data) {
     main.innerHTML = '<h1>Pel&iacute;culas Populares</h1>';
     data.forEach(peli => {
-        const { title, poster_path,overview,id } = peli;
-       
+        const { title, poster_path, overview, id } = peli;
+
         const peliElement = document.createElement('div');
         peliElement.classList.add('pelicula');
         peliElement.innerHTML += `
@@ -31,15 +31,15 @@ function showPeli(data) {
             <div class="peli-info">
                     <h3>${title}</h3>
                     <p>
-                    <input type="radio" name="valoracion" value= "1">
+                    <input type="radio" onclick="guardarPeliculaPopu(${id},1)" name="valoracion" value= "1">
                     <label for="radio1">❤</label>
-                    <input type="radio" name="valoracion" value= "2">
+                    <input type="radio" onclick="guardarPeliculaPopu(${id},2)"name="valoracion" value= "2">
                     <label for="radio2">❤</label>
-                    <input type="radio" name="valoracion" value= "3">
+                    <input type="radio" onclick="guardarPeliculaPopu(${id},3)" name="valoracion" value= "3">
                     <label for="radio3">❤</label>
-                    <input type="radio" name="valoracion" value= "4">
+                    <input type="radio" onclick="guardarPeliculaPopu(${id},4)" name="valoracion" value= "4">
                     <label for="radio4">❤</label>
-                    <input type="radio" name="valoracion" value= "5">
+                    <input type="radio" onclick="guardarPeliculaPopu(${id},5)" name="valoracion" value= "5">
                     <label for="radio5">❤</label>
                     </p>
 
@@ -67,31 +67,23 @@ function showPeli(data) {
 
 
 
-function vermasdesc(){
-let sec=document.getElementsByClassName('descripcion');
-console.log(sec);
-sec[0].classList.value = 'descripcion active';
+function vermasdesc() {
+    let sec = document.getElementsByClassName('descripcion');
+    console.log(sec);
+    sec[0].classList.value = 'descripcion active';
 
 
-/*sec.classList.value='descripcion active'*/
+    /*sec.classList.value='descripcion active'*/
 
 }
 
 function toggle(id) {
     let desco = document.getElementById(id);
-    
-    desco.classList.toggle ('active')
+
+    desco.classList.toggle('active')
 
 
 
 
 
 }
-
-
-
-
-
-
-
-
