@@ -20,7 +20,8 @@ function getPelicula(link) {
 function showPeli(data) {
     main.innerHTML = '<h1>Pel&iacute;culas Populares</h1>';
     data.forEach(peli => {
-        const { title, poster_path, vote_average, overview } = peli;
+        const { title, poster_path,overview } = peli;
+       
         const peliElement = document.createElement('div');
         peliElement.classList.add('pelicula');
         peliElement.innerHTML += `
@@ -108,7 +109,7 @@ function showPeli(data) {
 function vermasdesc(){
     let sec=document.getElementsByClassName('descripcion');
     console.log(sec);
-    sec[0].classList.value = 'descripcion active';
+    sec[1].classList.value = 'descripcion active';
 
 
     /*sec.classList.value='descripcion active'*/
@@ -117,7 +118,7 @@ function vermasdesc(){
 
 function toggle() {
     let desco = document.getElementById('desct');
-    desco.classList.value = 'descripcion deactive'
+    desco[1].classList.value = 'descripcion deactive'
 
 
 
