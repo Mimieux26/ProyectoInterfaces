@@ -20,23 +20,63 @@ function mostrarDatosLocals() {
     
 }
 
+function traerFav(){
+    var favs = mostrarDatosLocals()
+    
+
+  
+
+    if(favs){
+        var mapFavs=favs.map(favPeli)
+        var unir=mapFavs.join('')
+        var selector=document.querySelector('#sectionF')
+        selector.innerHTML=unir
+    }
+    IntersectionObs();
+    
+}
+function toggle(id) {
+    let desco = document.getElementById(id);
+
+    desco.classList.toggle('active')
+
+
+
+
+
+}  
+
 var favPeli=(pelicula)=>`
-        <img src="images/placeholder.jpg" data-src="${url_imagesFav+pelicula.imagen}" alt="${pelicula.titulo}" id="imagen">
+
         
-            <div class="peli-info">
-                    <h3>${pelicula.titulo}</h3>
-                    <button id="like" onclick="">❤</button>
-                    <button id="vermas" onclick="toggle(${pelicula.id})">Ver mas</button>
-                
-            </div>
-            <div class="descripcion" id="${pelicula.id}">
-                <div id="toggle" onclick="toggle(${pelicula.id})"></div>
-                <h3>Descripcion</h3>
-                ${pelicula.descripcion}
+            
+            <div class="pelicula">
+                <img src="images/placeholder.jpg" data-src="${url_imagesFav+pelicula.imagen}" alt="${pelicula.titulo}" id="imagen">
+            
+                <div class="peli-info">
+                        <h3>${pelicula.titulo}</h3>
+                        <button id="fav" onclick="">💔</button>
+                        <button id="vermas" onclick="toggle(${pelicula.id})">Ver mas</button>
+                    
+                </div>
+                <div class="descripcion" id="${pelicula.id}">
+                    <div id="toggle" onclick="toggle(${pelicula.id})"></div>
+                    <h3>Descripcion</h3>
+                    ${pelicula.descripcion}
 
             
+                </div>
             </div>
+        
+
+            
         `
+
+
+
+
+traerFav();     
+
 
         
 

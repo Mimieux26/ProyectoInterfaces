@@ -32,7 +32,7 @@ main {
     /* padding-top: 10rem; */
 }
 
-#section1 {
+#sectionF {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -153,16 +153,19 @@ footer {
 .Facebook img {
     width: 36px;
     height: 36px;
+    margin: 5px;
 }
 
 .twitter img {
     width: 36px;
     height: 36px;
+    margin: 5px;
 }
 
 .insta img {
     width: 36px;
     height: 36px;
+    margin: 5px;
 }
 
 .row label {
@@ -201,16 +204,19 @@ footer {
 .Casa img {
     width: 30px;
     height: 30px;
+    margin: 5px;
 }
 
 .Cel img {
     width: 30px;
     height: 30px;
+    margin: 5px;
 }
 
 .Correo img {
     width: 36px;
     height: 36px;
+    margin: 5px;
 }
 
 .row2 label {
@@ -322,4 +328,34 @@ nav ul li a::before {
 
 nav ul li a:hover::before {
     width: 100%;
+}
+
+#fav {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    padding: 0;
+    margin: 10px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+#fav:hover{
+    padding: 5px;
+    color: brown;
+}
+#vermas{
+    color: black;
+    background-color:darkcyan;
+    border: 2px;
+    border-radius: 6px;
+    width: 50px;
+    position:static;
+
+}
+#vermas:hover{
+    padding: 5px;
+    
 }

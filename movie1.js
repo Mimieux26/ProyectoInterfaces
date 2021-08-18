@@ -26,7 +26,7 @@ function showPeli(data) {
         const peliElement = document.createElement('div');
         peliElement.classList.add('pelicula');
         peliElement.innerHTML += `
-        <img src="images/placeholder.jpg" data-src="${url_images2+poster_path}" alt="${title}" id="imagen">
+        <img src="images/placeholder.jpg" data-src="${url_images+poster_path}" alt="${title}" id="imagen">
         
             <div class="peli-info">
                     <h3>${title}</h3>
