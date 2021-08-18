@@ -63,12 +63,8 @@ function toggle(id) {
 
     desco.classList.toggle('active')
 
-<<<<<<< HEAD
-}
-=======
 
 
 
 
 }
->>>>>>> 3090b4e6918e6f838346f1da007bfa111227a05a
