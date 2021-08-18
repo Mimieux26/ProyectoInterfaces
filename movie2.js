@@ -16,7 +16,7 @@ function getPelicula2(link) {
 function showPeli2(data) {
     main2.innerHTML = '<h1>Proximas Pel&iacute;culas</h1>';
     data.forEach(peli => {
-        const { title, poster_path,vote_average,overview } = peli;
+        const {title, poster_path,id,overview} = peli;
         const peliElement2 = document.createElement('div');
         peliElement2.classList.add('pelicula');
         peliElement2.innerHTML += `
@@ -24,18 +24,35 @@ function showPeli2(data) {
         
             <div class="peli-info">
                 <h3>${title}</h3>
-                <span class="valor">${vote_average}</span>
+                <button id="fav" onclick="guardarPeliculaPopu(${id})">❤</button>
+                <button id="vermas" onclick="toggle(${id+1})">Ver mas</button>
             </div>
-            <div class="descripcion">
+            <div class="descripcion" id="${id+1}">
+                <div id="toggle" onclick="toggle(${id+1})"></div>
                 <h3>Descripcion</h3>
                 ${overview}
+
             
-        </div>
+            </div>
         `
 
         main2.appendChild(peliElement2);
 
     });
     IntersectionObs();
+
+
+
+
+}
+
+function toggle(id) {
+    let desco = document.getElementById(id);
+
+    desco.classList.toggle('active')
+
+
+
+
 
 }

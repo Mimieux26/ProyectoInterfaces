@@ -11,9 +11,6 @@ body {
     margin: 0;
 }
 
-
-/*header inicio*/
-
 .barra {
     width: 1000px;
     margin: 0 auto;
@@ -28,9 +25,6 @@ header {
     justify-content: flex-end;
 }
 
-
-/*fin header inicio*/
-
 main {
     display: flex;
     flex-wrap: wrap;
@@ -44,11 +38,7 @@ main {
     justify-content: center;
 }
 
-#section2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 
 h1 {
     width: 100%;
@@ -127,11 +117,12 @@ h3 {
     transform: translateY(101%);
 }
 
-
-
-
-
-/*comienza el footer*/
+#logo_cuevanaFav {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 8px;
+}
 
 footer {
     width: 100%;
@@ -243,7 +234,6 @@ footer {
 
 .copyright {
     color: #C7C7C7;
-
 }
 
 .copyright a {
@@ -270,20 +260,35 @@ footer {
     }
 }
 
-
-/*fin footer*/
-
-#logo_cuevana {
-    width: 100px;
-    height: 100px;
-    float: left;
-    padding: 8px;
+#toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 
-#logo_cuevana_footer {
-    width: 100px;
-    height: 100px;
+#toggle:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
+
+#toggle:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
 
 nav {
     float: right;
@@ -317,50 +322,4 @@ nav ul li a::before {
 
 nav ul li a:hover::before {
     width: 100%;
-}
-
-#fav {
-    display: inline-block;
-    position: relative;
-    height: 50px;
-    padding: 0;
-    margin: 10px;
-    width: 50px;
-    background-color: transparent;
-    border: none;
-    font-size: 30px;
-}
-
-#fav:hover{
-    padding: 5px;
-    color: brown;
-}
-
-#toggle {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-#toggle:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-#toggle:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
 }

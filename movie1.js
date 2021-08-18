@@ -26,24 +26,11 @@ function showPeli(data) {
         const peliElement = document.createElement('div');
         peliElement.classList.add('pelicula');
         peliElement.innerHTML += `
-        <img src="images/placeholder.jpg" data-src="${url_images+poster_path}" alt="${title}" id="imagen">
+        <img src="images/placeholder.jpg" data-src="${url_images2+poster_path}" alt="${title}" id="imagen">
         
             <div class="peli-info">
                     <h3>${title}</h3>
-                    <p>
-                    <input type="radio" onclick="guardarPeliculaPopu(${id},1)" name="valoracion" value= "1">
-                    <label for="radio1">❤</label>
-                    <input type="radio" onclick="guardarPeliculaPopu(${id},2)"name="valoracion" value= "2">
-                    <label for="radio2">❤</label>
-                    <input type="radio" onclick="guardarPeliculaPopu(${id},3)" name="valoracion" value= "3">
-                    <label for="radio3">❤</label>
-                    <input type="radio" onclick="guardarPeliculaPopu(${id},4)" name="valoracion" value= "4">
-                    <label for="radio4">❤</label>
-                    <input type="radio" onclick="guardarPeliculaPopu(${id},5)" name="valoracion" value= "5">
-                    <label for="radio5">❤</label>
-                    </p>
-
-                    
+                    <button id="fav" onclick="guardarPeliculaPopu(${id})">❤</button>
                     <button id="vermas" onclick="toggle(${id})">Ver mas</button>
                 
             </div>
