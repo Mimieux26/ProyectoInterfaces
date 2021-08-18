@@ -128,9 +128,6 @@ h3 {
 }
 
 
-
-
-
 /*comienza el footer*/
 
 footer {
@@ -162,16 +159,19 @@ footer {
 .Facebook img {
     width: 36px;
     height: 36px;
+    margin: 5px;
 }
 
 .twitter img {
     width: 36px;
     height: 36px;
+    margin: 5px;
 }
 
 .insta img {
     width: 36px;
     height: 36px;
+    margin: 5px;
 }
 
 .row label {
@@ -210,16 +210,19 @@ footer {
 .Casa img {
     width: 30px;
     height: 30px;
+    margin: 5px;
 }
 
 .Cel img {
     width: 30px;
     height: 30px;
+    margin: 5px;
 }
 
 .Correo img {
     width: 36px;
     height: 36px;
+    margin: 5px;
 }
 
 .row2 label {
@@ -243,7 +246,6 @@ footer {
 
 .copyright {
     color: #C7C7C7;
-
 }
 
 .copyright a {
@@ -331,7 +333,7 @@ nav ul li a:hover::before {
     font-size: 30px;
 }
 
-#fav:hover{
+#fav:hover {
     padding: 5px;
     color: brown;
 }
@@ -364,18 +366,3 @@ nav ul li a:hover::before {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-<<<<<<< HEAD
-
-input[type="radio"] {
-    display: none;
-}
-
-label:hover {
-    color: rgb(46, 92, 219);
-}
-
-input [type="radio"]:checked~label {
-    color: rgb(46, 92, 219);
-}
-=======
->>>>>>> 3090b4e6918e6f838346f1da007bfa111227a05a
