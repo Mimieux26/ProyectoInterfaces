@@ -34,28 +34,3 @@ function ObtenerLocal(data) {
     });
 
 }
-
-
-
-// function TraerDeLocalSto() {
-//     var peliculas = []
-//     for (let id = 0; id < localStorage.length; id++) {
-//         peliculas[id] = JSON.parse(localStorage.getItem(localStorage.key(id)))
-//     }
-//     return peliculas;
-// }
-
-// var favoritas = (pelicula) =>
-
-
-//     function renderPeli() {
-//         let pelicula = llamarLocal()
-//         if (pelicula) {
-//             var renderPeliculas = pelicula.map(favor)
-//             var renderJoin = renderPeliculas.join('')
-//             let classList = document.querySelector('#renderPeliculas')
-//             lista.innerHTML = renderJoin
-//         }
-//         IntersectionObserver()
-//     }
-// renderPeli();

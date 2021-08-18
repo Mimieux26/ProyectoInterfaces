@@ -338,6 +338,19 @@ nav ul li a:hover::before {
     color: brown;
 }
 
+#vermas {
+    color: black;
+    background-color: darkcyan;
+    border: 2px;
+    border-radius: 6px;
+    width: 50px;
+    position: static;
+}
+
+#vermas:hover {
+    padding: 5px;
+}
+
 #toggle {
     position: relative;
     width: 30px;
