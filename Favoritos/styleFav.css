@@ -25,6 +25,32 @@ header {
     justify-content: flex-end;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding-top: 10rem; */
+}
+
+#section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h3 {
+    text-align: left;
+    color: floralwhite;
+    margin: 10px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: floralwhite;
+    margin: 50px;
+}
+
 #logo_cuevanaFav {
     width: 100px;
     height: 100px;

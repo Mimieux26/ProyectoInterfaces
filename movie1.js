@@ -2,8 +2,6 @@ const link_api = 'https://api.themoviedb.org/3/movie/popular?api_key=c8f0e89c2a7
 const url_images = 'https://image.tmdb.org/t/p/w300';
 
 
-
-
 var arrayPeliPopular = []
 const main = document.getElementById('section1');
 
@@ -16,7 +14,6 @@ function getPelicula(link) {
     })
 
 }
-
 
 function showPeli(data) {
     main.innerHTML = '<h1>Pel&iacute;culas Populares</h1>';
@@ -64,9 +61,6 @@ function showPeli(data) {
 }
 
 
-
-
-
 function vermasdesc() {
     let sec = document.getElementsByClassName('descripcion');
     console.log(sec);
@@ -81,9 +75,5 @@ function toggle(id) {
     let desco = document.getElementById(id);
 
     desco.classList.toggle('active')
-
-
-
-
 
 }
