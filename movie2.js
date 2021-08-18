@@ -1,13 +1,18 @@
 const link_api2= 'https://api.themoviedb.org/3/movie/upcoming?api_key=c8f0e89c2a789ea8a93c6db654ac65d8&language=es&page=1';
 const url_images2= 'https://image.tmdb.org/t/p/w300';
-
 const main2= document.getElementById('section2');
+var arrayPeliPopular2 = []
+var arrayDefinitivo=[]
 
 getPelicula2(link_api2);
 
 function getPelicula2(link) {
     fetch(link).then(res => res.json()).then(data => {
         showPeli2(data.results);
+        arrayPeliPopular2 = data.results;
+        arrayDefinitivo=arrayPeliPopular.concat(arrayPeliPopular2);
+        console.log(arrayDefinitivo);
+        
     })
     
 }
@@ -24,11 +29,11 @@ function showPeli2(data) {
         
             <div class="peli-info">
                 <h3>${title}</h3>
-                <button id="fav" onclick="guardarPeliculaPopu(${id})">❤</button>
-                <button id="vermas" onclick="toggle(${id+1})">Ver mas</button>
+                <button id="fav" onclick="guardarPeliculaPopu(${id})">💖</button>
+                <button id="vermas" onclick="toggle(${id})">Ver mas</button>
             </div>
-            <div class="descripcion" id="${id+1}">
-                <div id="toggle" onclick="toggle(${id+1})"></div>
+            <div class="descripcion" id="${id}">
+                <div id="toggle" onclick="toggle(${id})"></div>
                 <h3>Descripcion</h3>
                 ${overview}
 
@@ -37,6 +42,7 @@ function showPeli2(data) {
         `
 
         main2.appendChild(peliElement2);
+        
 
     });
     IntersectionObs();

@@ -123,11 +123,6 @@ h3 {
     overflow: scroll;
 }
 
-.descripcion.deactive {
-    transform: translateY(101%);
-}
-
-
 
 
 
@@ -249,7 +244,6 @@ footer {
 
 .copyright {
     color: #C7C7C7;
-
 }
 
 .copyright a {
@@ -337,23 +331,22 @@ nav ul li a:hover::before {
     font-size: 30px;
 }
 
-#fav:hover{
+#fav:hover {
     padding: 5px;
     color: brown;
 }
 
-#vermas{
+#vermas {
     color: black;
-    background-color:darkcyan;
+    background-color: darkcyan;
     border: 2px;
     border-radius: 6px;
     width: 50px;
-    position:static;
-
+    position: static;
 }
-#vermas:hover{
-    padding: 5px;
 
+#vermas:hover {
+    padding: 5px;
 }
 
 #toggle {

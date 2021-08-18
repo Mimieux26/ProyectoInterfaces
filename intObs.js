@@ -7,7 +7,7 @@ const options={
    
 };
 const img= document.querySelectorAll('img');
-console.log(img);
+
 
 function callback(entries, observer){    
     entries.forEach(entry=>{
